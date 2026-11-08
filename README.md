@@ -79,36 +79,13 @@ Sortable fields: `price`, `cost`, `stockQuantity`, `productName`, `category`, `s
 
 **Example:** `GET /api/inventory?page=1&limit=50&search=audio&category=electronics&sort=-price`
 
-```json
-{
-  "success": true,
-  "data": [ { "_id": "...", "productName": "...", "sku": "ELE-000123", "category": "Electronics", "price": 249.99, "cost": 150, "stockQuantity": 42, "reorderLevel": 20, "lastUpdated": "..." } ],
-  "pagination": {
-    "totalRecords": 312,
-    "totalPages": 7,
-    "currentPage": 1,
-    "hasNextPage": true,
-    "hasPrevPage": false
-  }
-}
-```
+<img width="645" height="903" alt="image" src="https://github.com/user-attachments/assets/eb9264a8-39b2-4c98-9ad1-04d725bed0f0" />
+
 
 ### `GET /api/analytics`
 
-Optional: `?category=electronics`. Returns data shaped for dashboard widgets:
+<img width="645" height="837" alt="image" src="https://github.com/user-attachments/assets/22a0df42-34ca-4a44-9668-1f35ac70c0c8" />
 
-```json
-{
-  "success": true,
-  "data": {
-    "summary": { "totalSKUs": 50000, "totalInventoryValue": 0, "outOfStockItems": 0 },
-    "restockPriority": [ { "productName": "...", "sku": "...", "stockQuantity": 0 } ],
-    "categoryDistribution": [ { "category": "Electronics", "totalValue": 0, "productCount": 0, "percentage": 0 } ]
-  }
-}
-```
-
-(Values above are placeholders; the real response contains the live computed numbers.)
 
 ### Other endpoints
 
