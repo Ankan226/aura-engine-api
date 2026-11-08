@@ -132,10 +132,8 @@ Optional: `?category=electronics`. Returns data shaped for dashboard widgets:
 
 Error format:
 
-```json
-<img width="637" height="225" alt="image" src="https://github.com/user-attachments/assets/e803ceaa-352c-4be3-bfc6-79d2ba80e29b" />
 
-```
+<img width="637" height="225" alt="image" src="https://github.com/user-attachments/assets/e803ceaa-352c-4be3-bfc6-79d2ba80e29b" />
 
 ## Performance
 
